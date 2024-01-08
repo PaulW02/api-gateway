@@ -33,7 +33,7 @@ public class SecurityConfig {
         serverHttpSecurity
                 .cors().configurationSource(request -> {
                     CorsConfiguration corsConfiguration = new CorsConfiguration();
-                    corsConfiguration.setAllowedOrigins(Collections.singletonList("https://vite-frontend.app.cloud.cbh.kth.se/"));
+                    corsConfiguration.setAllowedOrigins(Collections.singletonList("https://vite-frontend.app.cloud.cbh.kth.se"));
                     corsConfiguration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
                     corsConfiguration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     return corsConfiguration;
