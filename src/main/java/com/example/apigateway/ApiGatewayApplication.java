@@ -16,14 +16,14 @@ public class ApiGatewayApplication {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(r -> r.path("/user/**").uri("https://login-microservice.app.cloud.cbh.kth.se/"))
-                .route(r -> r.path("/message/**").uri("https://message-microservice.app.cloud.cbh.kth.se/"))
-                .route(r -> r.path("/patient/**").uri("https://patient-microservice.app.cloud.cbh.kth.se/"))
-                .route(r -> r.path("/encounter/**").uri("https://patient-microservice.app.cloud.cbh.kth.se/"))
-                .route(r -> r.path("/observation/**").uri("https://patient-microservice.app.cloud.cbh.kth.se/"))
-                .route(r -> r.path("/condition/**").uri("https://patient-microservice.app.cloud.cbh.kth.se/"))
-                .route(r -> r.path("/image/**").uri("https://image-microservice.app.cloud.cbh.kth.se/"))
-                .route(r -> r.path("/search/**").uri("https://quarkus-microservice.app.cloud.cbh.kth.se/"))
+                .route(r -> r.path("/user/**").uri("https://login-microservice/"))
+                .route(r -> r.path("/message/**").uri("https://message-microservice/"))
+                .route(r -> r.path("/patient/**").uri("https://patient-microservice/"))
+                .route(r -> r.path("/encounter/**").uri("https://patient-microservice/"))
+                .route(r -> r.path("/observation/**").uri("https://patient-microservice/"))
+                .route(r -> r.path("/condition/**").uri("https://patient-microservice/"))
+                .route(r -> r.path("/image/**").uri("https://image-microservice/"))
+                .route(r -> r.path("/search/**").uri("https://quarkus-microservice/"))
                 .build();
     }
 
